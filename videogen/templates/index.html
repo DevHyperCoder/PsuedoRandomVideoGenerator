@@ -1,21 +1,20 @@
+<DOCTYPE html>
 <html>
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <link rel="stylesheet" href="{{ url_for("static", filename= "style.css")}}" >
-  
     <title>Video Generator</title>
-    
   </head>
   <body>
-    <img src="/static/logo.jpg" alt="Short Clip Generator" />
-    <div>
-      <p class="title">
-        Choose a Theme!
-      </p>
-      <div class="container">
-        <input type="submit" name="Sad Theme" id="sadButton" value="Sad Theme" />
-        <input type="submit" name="Happy Theme" id="happyButton" value="Happy Theme" />
+    <img src="/static/logo.jpg" alt="Logo" />
+    <div class="boxcontainer">
+    </div>
+      <div class="textcontainer">
+        <p>Choose A Theme!</p>
       </div>
+      <div class="buttoncontainer">
+        <input type="button" id="sadButton" value="Sad Theme"/>
+        <input type="button" id="happyButton" value="Happy Theme" />
     </div>
   </body>
 </html>
