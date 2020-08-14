@@ -2,19 +2,22 @@
 <html>
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <link rel="stylesheet" href="{{ url_for("static", filename= "style.css")}}" >
+    <link rel="stylesheet" href="{{url_for('static', filename= 'style.css')}}" >
     <title>Video Generator</title>
   </head>
-  <body>
-    <img src="/static/logo.jpg" alt="Logo" />
+  <body id="whole">
+    <p class="head" id="head">Short Clip Generator!</p>
     <div class="boxcontainer">
-    </div>
-      <div class="textcontainer">
-        <p>Choose A Theme!</p>
+      <div class="box">
+        <p class="title" id="stitle">Short Clip Generator!</p>
+        <div class="buttoncontainer">
+          <input type="submit" id="sadButton" class="sad" value="Sad Clip" onclick="sadtheme()" onmouseover="sadbg()" onmouseout="sadbgout()"/>
+          <input type="submit" id="happyButton" class="happy" value="Happy Clip" onclick="happytheme()"/>
+        </div>
+        <input id="generate" class="gstart" onclick="hide()" type="submit" value="Get Started!"/>
       </div>
-      <div class="buttoncontainer">
-        <input type="button" id="sadButton" value="Sad Theme"/>
-        <input type="button" id="happyButton" value="Happy Theme" />
     </div>
+  <script src="{{url_for('static', filename='main.js')}}"></script>
+  </script>
   </body>
 </html>
